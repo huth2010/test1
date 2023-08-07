@@ -1,10 +1,10 @@
-package com.example.test1;
+package com.example.test1.ui.security;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.thienlhph20561assignment.databinding.ActivitySecurityBinding;
+import com.example.test1.databinding.ActivitySecurityBinding;
 
 public class SecurityActivity extends AppCompatActivity {
     private ActivitySecurityBinding binding;

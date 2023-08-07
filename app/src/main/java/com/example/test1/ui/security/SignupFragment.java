@@ -1,4 +1,4 @@
-package com.example.test1;
+package com.example.test1.ui.security;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import com.example.thienlhph20561assignment.databinding.FragmentSignupBinding;
+import com.example.test1.databinding.FragmentSignupBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

@@ -1,4 +1,4 @@
-package com.example.test1;
+package com.example.test1.ui.security;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -9,23 +9,28 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.Navigation;
+
+import com.example.test1.R;
+import com.example.test1.databinding.FragmentSplashBinding;
+
 
 public class SplashFragment extends Fragment {
-
+private FragmentSplashBinding binding;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_splash, container, false);
+        binding = FragmentSplashBinding.inflate(inflater, container, false);
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                    Sup
+                Navigation.findNavController(binding.getRoot()).navigate(R.id.action_splashFragment_to_loginFragment);
             }
         }, 3000);
 
-        return view;
+        return binding.getRoot();
     }
 
 
