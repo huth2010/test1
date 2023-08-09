@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.test1.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.test1.ui.home.DetailFragment"
+        tools:layout="@layout/fragment_detail"
+        android:label="DetailFragment" >
+        <argument
+            android:name="comicArg"
+            app:argType="com.example.test1.data.model.Comic" />
+        <action
+            android:id="@+id/action_detailFragment_to_readFragment"
+            app:destination="@id/readFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/editFragment"
+        android:name="com.example.test1.ui.home.EditFragment"
+        tools:layout="@layout/fragment_edit"
+        android:label="EditFragment" >
+        <argument
+            android:name="comicArg"
+            app:argType="com.example.test1.data.model.Comic" />
+    </dialog>
+    <fragment
+        android:id="@+id/readFragment"
+        android:name="com.example.test1.ui.home.ReadFragment"
+        android:label="fragment_read"
+        tools:layout="@layout/fragment_read" >
+        <argument
+            android:name="comicArg"
+            app:argType="com.example.test1.data.model.Comic" />
+    </fragment>
+</navigation>

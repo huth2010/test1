@@ -37,7 +37,7 @@ tools:context=".ui.security.LoginFragment">
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_launcher_foreground" />
+                android:background="@drawable/cat" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
@@ -45,7 +45,7 @@ tools:context=".ui.security.LoginFragment">
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Đăng nhập tài khoản"
+                android:text="Đăng kí tài khoản"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
